@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container_header">
+            <div class="container_logo" id="logo">
+                <h1>Recortes</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="titulo">
+            <a onclick="location.href = '#conteudo'"><img src="media/page_down.png" width="64px"></a>
+        </div>
+        <div class="conteudo" id="conteudo">
+
+        </div>
+        <div class="extras">
+            <div class="sobre">
+                <div class="perfil">
+                    <div>
+                        <img src="media/perfil.png">
+                    </div>
+                    <div>
+                        <h2>Dyva</h2>
+                        <p>Paixão em textos (com muito humor nas entrelinhas rs)</p>
+                    </div>
+                </div>
+
+                <div class="bio">
+                    <ul>
+                        <li><b>Nascimento:</b> 05 de Maio de 2005, Penapolis-SP </li>
+                        <li>Budista 🧘‍♂️</li>
+                    </ul>
+                </div>
+
+                <div class="social-media">
+                    <a href="https://www.instagram.com/davyuser456/"><img src="media/instagram_icon.png"></a><br>
+                    <a href="https://www.tumblr.com/blog/recortesbyme"><img src="media/tumblr_icon.png"></a>
+                    <a href="https://medium.com/@dyva_666"><img src="media/medium_icon.png"></a><br>
+                    <a href="https://sweek.com/pt/profile/1483139/74088"><img src="media/sweek_icon.png"></a>
+                    <a href="https://www.wattpad.com/user/dyva_666"><img src="media/wattpad_icon.png"></a>
+                    <a href="https://www.getrevue.co/profile/fred_xopan"><img src="media/revue_icon.png"></a>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+<script>
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    function myFunction() {
+        if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+            document.getElementById("logo").className = "logo_fixed";
+        } else {
+            document.getElementById("logo").className = "container_logo";
+        }
+    }
+</script>
+
+</html>
